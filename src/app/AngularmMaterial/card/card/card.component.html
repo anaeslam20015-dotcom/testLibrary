@@ -1,0 +1,40 @@
+<div class="container my-5">
+  @if (loading) {
+    <div class="row g-3">
+      @for (product of products; track product.id) {
+        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+          <mat-card class="example-card rounded-3 h-100">
+            <img
+              mat-card-image
+              [src]="product.images"
+              alt="Photo of a Shiba Inu"
+            />
+            <mat-card-content class="bg-light text-dark p-3 my-3 h-75">
+              <p>
+                <span class="text-primary">Title</span> : {{ product.title }}
+              </p>
+              <p>
+                <span class="text-primary">Price</span> : {{ product.price }}$
+              </p>
+            </mat-card-content>
+            <mat-card-actions class="btn mb-4">
+              <button mat-raised-button color="primary" class="me-3">
+                Add
+              </button>
+              <button mat-raised-button color="accent">Details</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="d-grid justify-content-center">
+      <mat-spinner
+        color="primary"
+        mode="indeterminate"
+        diameter="50"
+        class="mt-5"
+      ></mat-spinner>
+    </div>
+  }
+</div>

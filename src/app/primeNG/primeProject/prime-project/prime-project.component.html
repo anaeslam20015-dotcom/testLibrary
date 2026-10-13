@@ -1,0 +1,13 @@
+<div class="container text-center my-5">
+  <div>
+    <p-sidebar sidebar [(visible)]="sidebarVisible" class="bg-dark" >
+      <h3
+        class="bg-dark text-white w-100 p-2 rounded-2"
+        routerLink="/primeTable"
+      >
+        table
+      </h3>
+    </p-sidebar>
+    <p-button (onClick)="sidebarVisible = !sidebarVisible" icon="pi pi-arrow-right" />
+  </div>
+</div>

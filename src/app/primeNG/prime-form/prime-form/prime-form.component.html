@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="Employee-Form">
+    <h1 class="bg-info text-white text-center py-2 rounded-3">Employee Form</h1>
+    <form>
+      <input
+        pInputText
+        type="text"
+        placeholder="Full Name"
+        class="inputText"
+        ngClass="Name"
+      />
+
+      <input
+        pInputText
+        type="email"
+        placeholder="Email"
+        class="mt-4"
+      />
+
+      <input pInputText type="number" placeholder="Salary" class="mt-4" />
+
+      <div class="box-c-d">
+        <p-calendar class="w-100" placeholder="Birth Day" />
+
+        <p-dropdown
+          [options]="cities"
+          optionLabel="name"
+          placeholder="Select a City"
+          class="w-100"
+        />
+      </div>
+      <div class="checkbox d-flex align-contant-center mt-3">
+        <p-checkbox [binary]="true" inputId="binary" />
+        <small class="ms-2">Available to work</small>
+      </div>
+      <button
+        pButton
+        pRipple
+        label="Submit"
+        class="p-button-primary w-100 mt-3"
+      ></button>
+    </form>
+  </div>
+</div>

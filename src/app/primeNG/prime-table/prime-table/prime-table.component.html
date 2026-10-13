@@ -1,0 +1,28 @@
+<div class="container d-flex justify-content-center my-5">
+  <div class="table w-75 rounded-4">
+    <p-table
+      [value]="Employees"
+      styleClass="p-datatable-striped"
+      class="rounded-4"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th class="bg-dark text-white" pSortableColumn="id">
+            ID <p-sortIcon field="id" />
+          </th>
+          <th class="bg-dark text-white ">Name</th>
+          <th class="bg-dark text-white ">Salary</th>
+          <th class="bg-dark text-white ">Duration</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.salary }}$</td>
+          <td>{{ product.employmentDuration }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

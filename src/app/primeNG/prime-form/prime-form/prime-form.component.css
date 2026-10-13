@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Employee-Form */
+.container .Employee-Form {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 900px;
+  padding: 45px 20px;
+  box-shadow: 0px 1px 2px 0px black;
+}
+
+.Employee-Form input {
+  width: 100%;
+}
+.box-c-d {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 732px) {
+  .container .Employee-Form{
+    width: 100%;
+    margin: 0px 20px;
+  }
+  .Employee-Form input {
+    width: 100%;
+  }
+  .box-c-d {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}

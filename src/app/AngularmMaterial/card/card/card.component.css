@@ -1,0 +1,12 @@
+.example-card {
+  max-width: 300px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 75px;
+}

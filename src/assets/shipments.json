@@ -1,0 +1,47 @@
+[
+  {
+    "id": "#SM4001",
+    "customerName": "John Doe",
+    "city": "New York",
+    "carrier": "FedEx",
+    "dateShipped": "2023-11-01",
+    "status": "In Transit",
+    "showVisibility": true
+  },
+  {
+    "id": "#SM4002",
+    "customerName": "Jane Smith",
+    "city": "Los Angeles",
+    "carrier": "UPS",
+    "dateShipped": "2023-10-31",
+    "status": "Delivered",
+    "showVisibility": true
+  },
+  {
+    "id": "#SM4003",
+    "customerName": "Bob Johnson",
+    "city": "Chicago",
+    "carrier": "DHL",
+    "dateShipped": "2023-10-29",
+    "status": "Pending",
+    "showVisibility": true
+  },
+  {
+    "id": "#SM4004",
+    "customerName": "Alice Brown",
+    "city": "Houston",
+    "carrier": "USPS",
+    "dateShipped": "2023-10-30",
+    "status": "Delayed",
+    "showVisibility": true
+  },
+  {
+    "id": "#SM4005",
+    "customerName": "Mike Wilson",
+    "city": "Miami",
+    "carrier": "FedEx",
+    "dateShipped": "2023-11-01",
+    "status": "In Transit",
+    "showVisibility": true
+  }
+]
